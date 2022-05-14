@@ -131,6 +131,7 @@ CREATE TABLE `sys_empresa` (
 INSERT INTO `sys_empresa` (`emp_id`, `emp_nome`, `emp_alias`, `emp_cnpj`, `emp_ie`, `emp_cep`, `emp_log`, `emp_num`, `emp_compl`, `emp_bai`, `emp_cid`, `emp_uf`, `emp_contato`, `emp_email`, `emp_tel`, `emp_site`, `emp_logo`, `emp_data`) VALUES
 (1,'Koode Tecnologia LTDA','Koode ','11.111.111/0001-94','111.111.111.111','04571925','Avenida Engenheiro Luiz Carlos Berrini','550','8º Andar','Cidade Monções','São Paulo','SP','Felipe Vasconcelos','comercial@koode.io','(11)5504-1919','https://koode.io/','/images/logo_emp/LOGO_Vertical_V2.png','2018-11-14 00:00:00');
 
+
 -- --------------------------------------------------------
 
 --
@@ -151,6 +152,8 @@ CREATE TABLE `sys_logado` (
 -- Extraindo dados da tabela `sys_logado`
 --
 -- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `sys_usuario`
 --
 
@@ -186,7 +189,8 @@ CREATE TABLE `sys_usuario` (
 --
 
 INSERT INTO `sys_usuario` (`usu_cod`, `usu_nome`, `usu_senha`, `usu_empId`, `usu_dpId`, `usu_classeId`, `usu_email`, `usu_ativo`, `usu_online`, `usu_foto`, `usu_datacad`, `usu_datades`, `usu_chapa`, `usu_sexo`, `usu_ramal`, `usu_cel`, `usu_dashId`, `usu_mnutopId`, `usu_pagId`, `usu_usucadId`, `usu_pmail`, `usu_pchat`, `usu_pcalend`, `usu_prelatorio`) VALUES
-(1, 'Elvis Leite', '90f80b22f53a5d4d72f7b126ef4b1f44', 1, 2, 1, 'admin@kood.io', '1', '0', '/images/perfil/Elv_1.png', '2022-01-12 03:00:00', '2021-02-16 03:00:00', '1103', 'M', '7445', '(11)9 4749-1646', 11, 16, 10, 1, '1', '1', '1', '1');
+(1, 'Elvis Leite', '90f80b22f53a5d4d72f7b126ef4b1f44', 1, 2, 1, 'admin@koode.io', '1', '0', '/images/perfil/Elv_1.png', '2022-01-12 03:00:00', '2021-02-16 03:00:00', '1103', 'M', '7445', '(11)9 4749-1646', 11, 16, 10, 1, '1', '1', '1', '1');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -220,12 +224,6 @@ ALTER TABLE `sys_empresa`
 --
 ALTER TABLE `sys_logado`
   ADD PRIMARY KEY (`log_id`);
-
---
--- Índices para tabela `sys_sistema`
---
-ALTER TABLE `sys_sistema`
-  ADD PRIMARY KEY (`sys_id`);
 
 --
 -- Índices para tabela `sys_usuario`

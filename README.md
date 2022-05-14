@@ -34,6 +34,7 @@ projeto.
 * Na pasta raiz executar 
 > docker-composer up -d
 
+* Agurade 30 segundos para o banco carregar 
 * Acessar a aplicação em:
 http://127.0.0.1:85/view/login.php
 - Login: admin@koode.io 
